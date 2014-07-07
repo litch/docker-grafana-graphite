@@ -78,6 +78,9 @@ add     ./supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 # Grafana
 expose  80
 
+# Graphite
+expose 8000
+
 # StatsD UDP port
 expose  8125/udp
 

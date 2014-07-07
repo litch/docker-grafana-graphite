@@ -3,7 +3,6 @@ run     echo 'deb http://us.archive.ubuntu.com/ubuntu/ trusty universe' >> /etc/
 run     apt-get -y update
 run     apt-get -y upgrade
 
-
 # ---------------- #
 #   Installation   #
 # ---------------- #
@@ -69,8 +68,6 @@ add     ./grafana/config.js /src/grafana/config.js
 add     ./nginx/nginx.conf /etc/nginx/nginx.conf
 add     ./supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
-
-
 # ---------------- #
 #   Expose Ports   #
 # ---------------- #
@@ -86,8 +83,6 @@ expose  8125/udp
 
 # StatsD Management port
 expose  8126
-
-
 
 # -------- #
 #   Run!   #
